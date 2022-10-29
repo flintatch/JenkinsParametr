@@ -11,11 +11,11 @@ public class SystemPropertiesTest {
         String browserName = System.getProperty("browser", "chrome");
         String browserVersion = System.getProperty("browser_version", "100");
         String browserSize = System.getProperty("browser_size", "1920x1080");
-        String remoteURL = System.getProperty("remote_URL", "");
+        String remoteUrl = System.getProperty("remote_Url", "");
 
         System.out.println(browserName);
         System.out.println(browserVersion);
         System.out.println(browserSize);
-        System.out.println(remoteURL);
+        System.out.println(remoteUrl);
     }
 }
