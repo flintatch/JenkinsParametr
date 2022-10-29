@@ -40,6 +40,7 @@ public class RegistrationFormTest extends TestBase {
                         $("#stateCity-wrapper").$(byText("Delhi")).click();
                         $("#submit").click();
                     });
+
                 step("Check Registration form", () -> {
                     $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
                     $$(".table-responsive").findBy(text("Student Name")).shouldHave(text("Irwing Price"));
