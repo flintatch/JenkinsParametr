@@ -8,7 +8,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import java.util.browserSize;
 import java.util.Properties;
 
 
