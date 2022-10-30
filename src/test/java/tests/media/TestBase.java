@@ -29,11 +29,6 @@ public class TestBase {
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
             Configuration.remote = System.getProperty("remote_driver");
-
-//        capabilities.setCapability("browserName", "chrome");
-//        capabilities.setCapability("browserVersion", "100.0");
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
     }
 
     @AfterEach
