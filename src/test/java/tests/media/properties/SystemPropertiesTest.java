@@ -17,5 +17,6 @@ public class SystemPropertiesTest {
         System.out.println(browserVersion);
         System.out.println(browserSize);
         System.out.println(remoteUrl);
+
     }
 }
