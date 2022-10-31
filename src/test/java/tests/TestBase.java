@@ -1,4 +1,4 @@
-package tests.media;
+package tests;
 
 import Assisst.Attach;
 import com.codeborne.selenide.Configuration;

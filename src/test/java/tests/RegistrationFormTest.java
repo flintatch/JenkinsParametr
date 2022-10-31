@@ -1,4 +1,4 @@
-package tests.media;
+package tests;
 
 import org.junit.jupiter.api.Test;
 
