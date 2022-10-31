@@ -44,9 +44,3 @@ tasks.withType(Test) {
         }
     }
 }
-
-task many_properties(type: Test) {
-    useJUnitPlatform {
-        includeTags "many_properties_test"
-    }
-}
