@@ -20,19 +20,21 @@ public class TestBase {
         Configuration.holdBrowserOpen = true;
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("browserName", "chrome");
-//        capabilities.setCapability("browserVersion", "100.0");
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-    }
+        if (System.getProperty("remote_driver") != null) {
 
-    @AfterEach
-    void addAttachments() {
-        Attach.screenshotAs("Last Screenshot");
-        Attach.pageSource();
-        Attach.browserConsoleLogs();
-        Attach.addVideo();
-    }
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
+            Configuration.browserCapabilities = capabilities;
+            Configuration.remote = System.getProperty("remote_driver");
+        }
 
+        @AfterEach
+        void addAttachments () {
+            Attach.screenshotAs("Last Screenshot");
+            Attach.pageSource();
+            Attach.browserConsoleLogs();
+            Attach.addVideo();
+        }
+    }
 }
