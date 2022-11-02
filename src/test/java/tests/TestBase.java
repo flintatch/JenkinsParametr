@@ -21,11 +21,11 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.browserVersion = System.getProperty("browserVersion", "100");
-        Configuration.remote = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        if (System.getProperty("remoteUrl") != null) {
-            Configuration.remote = System.getProperty("remoteUrl");
+        Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
+        Configuration.browserVersion = System.getProperty("browser_version", "100");
+        Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        if (System.getProperty("remote_url") != null) {
+            Configuration.remote = System.getProperty("remote_url");
         }
     }
 
