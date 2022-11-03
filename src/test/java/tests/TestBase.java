@@ -26,6 +26,7 @@ public class TestBase {
         Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         if (System.getProperty("remote_url") != null) {
             Configuration.remote = System.getProperty("remote_url");
+            Configuration.baseUrl = System.getProperty(" https://demoqa.com");
         }
     }
 
